@@ -1,0 +1,233 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+  /* added by me */
+
+  .section__pic-container img:hover{
+    transform: rotateY(360deg);
+      transition: 16s;
+  }
+
+  .arrowicon:hover{
+    transform: scaleY(2.4);
+    transition: 0.9s;
+  }
+  .section__pic-container {
+  background-color:cornsilk;
+  }
+
+
+}
+
+/* THIS IS FOR TABLETS or TABS */
+
+@media screen and (max-width: 1200px) {  
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #skills,
+  .skills-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width:  275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+  }
+  
+  /* added by me */
+ 
+  .section__pic-container img{
+    border-radius: 3rem;
+    width: 275px;
+    height: 275px;
+  }
+ .section__pic-container img:hover{
+  border-radius: 100%;
+  transform: rotate(-360deg);  
+  transition: 10s;
+  }
+
+    #footer-nav,
+  .footer-nav-links {
+    background-color: rgb(189, 193, 204);
+    border-radius: 3rem;
+    gap: 2.4rem;
+    font-size: 1.5rem;  
+  }
+
+
+
+}
+
+
+/* THIS IS FOR MOBILES */
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  #footer-nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .skills-sub-title {
+    font-size: 1.25rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__pic-container img{
+    border-radius: 50%;
+  }
+
+  /* ADD BY ME 3 below */
+  
+  .section__pic-container{
+    background-color: rgb(235, 66, 66);
+  }
+
+  .section__pic-container img{
+    height: 260px;
+    width:  240px;
+  }
+
+  .section__pic-container img:hover{
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition: 6s;
+    /* transition: all ease-in-out;
+    transform: scale(1.05); */
+    transition: 3s;
+  }
+  
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  #fotter p{
+    padding-bottom: 2%;
+  }
+  .footer-nav-links{
+    flex-wrap: wrap;
+    background-color: rgb(235, 66, 66);
+    gap: 1px;
+  }
+  /* aadded by me */
+  .nav-links-container{
+    background-color: rgb(235, 66, 66);
+    border:  rgb(235, 66, 66);
+  }
+
+  .footer-nav-links a{
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+  }
+  footer nav {
+    background-color:  rgb(235, 66, 66);
+  }
+  
+   #hamburger-nav {
+    background-color: rgb(235, 66, 66);
+  }
+  .menu-links{
+  top: 90%;
+  border-radius: 10px;
+  }
+
+  .menu-links a {
+  padding: 2px;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  }
+
+  .menu-links a:hover{
+    color:  rgb(235, 26, 26);
+    text-decoration: none;
+  }
+  .contact-info-container{
+    padding: 3px 3px 1px 0px;
+  }
+
+  /* #footer-nav, */
+.footer-nav-links {
+    background-color: rgb(164, 222, 17);
+    font-size: 1rem;  
+    background-color: transparent;
+    flex-direction: row;
+    border-radius: 5%;
+    gap: 2px;
+    font-size: 1rem;
+    align-items: center;
+}
+ 
+
+}

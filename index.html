@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"  class="favicon" href="./assets/favicon.png" type="image/png" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+      <div class="name">Vasanth</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="name">Vasanth</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt="Vasanth profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vasanth</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2"onclick="window.open('./assets/Vasanth Resume1.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png"alt="My LinkedIn profile"class="icon profile-icon" onclick="location.href='https://www.linkedin.com/in/vasanthrpbtech'"/>
+          <img src="./assets/github.png" alt="My Github profile" class="icon profile-icon" onclick="location.href='https://github.com/vasanth1202'"/>
+          <img src="./assets/e-mail.png" alt="To mail to vasanth" class="icon profile-icon" onclick="location.href='mailto:vasanthrp1812@gmail.com'">
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+       
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png"alt="Experience icon" class="icon"/>
+              <h3>Python Programme</h3>
+              <p><h3>FrontendDevelopment</h3></p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>B-Tech <br>Information Technology </p>
+            </div>
+          </div>
+          <div class="about-text-container">
+            <p>
+              Energetic,highly motivated, and detail-oriented Information Technology graduate with a strong passion for technology.
+              Seeking an entry-level position to apply academic knowledge and technical skills, contribute to innovative projects, 
+              and support the organization’s growth. Eager to gain hands-on experience, develop professionally,and be part of a dynamic and forward-thinking team.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <img src="./assets/arrow.png" alt="icon arrow" class="arrowicon arrow"
+       onclick="location.href='#skills'"/>
+    </section>
+        
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers ">
+          <div class=" details-container skills-details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+              <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+               <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container skills-details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>Node.JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>Git & Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+               <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>Dejango</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>          
+              <article>
+               <img src="./assets/checkmark.png"alt="skills icon" class="icon"/>
+                <div>
+                  <h3>MangoDB</h3>
+                  <p>Basics</p>
+                </div>
+              </article>          
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon"class="arrowicon arrow" onclick="location.href='#experience'"/>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Get To Know My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-section-container experience-details-container experience-containers ">
+        <div class="text-container">
+          <h4>Software Developer</h4>
+          <p>
+              As an aspiring frontend developer, I have built multiple responsive web applications that demonstrate my proficiency in HTML, CSS, JavaScript, 
+              and version control tools like Git and GitHub.BookVault, a personal library management system with live deployment , developed with clean UI principles and mobile responsiveness in mind. 
+              I also created a To-Do List app and a Basic Calculator and FitTrack, a BMI calculator offering dynamic health tips based on user input.
+              These hands-on projects reflect to write scalable,user-friendly code and responsive UI design.
+              In addition of problem-solving, adaptability, time management, and teamwork. 
+              Eager to contribute in a collaborative software development environment, I am actively seeking an opportunity where I can apply and grow my frontend development skills in real-world projects, preferably within an agile and innovation-driven team
+          </p>
+        </div>
+      </div>
+    <img src="./assets/arrow.png" alt="Arrow icon"class="arrowicon arrow" onclick="location.href='#projects'"/>
+    </section>
+ 
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="details-container projects-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+
+            <div class="article-container">
+                <img src="./assets/Landing UI.jpeg" alt="Project 1" 
+                class="project-img"/>
+              </div>
+              <h2 class="project-title">Project One <br>Bookvoult
+              </h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vasanth1202/bookvoult'">Github</button>
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://vasanth1202.github.io/bookvoult/'">Live Demo</button>
+              </div>
+            </div>
+      
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project 1.jpeg" alt="Project 2 " class="project-img"/>
+            </div>
+            <h2 class="project-title">Project Two <br>Is Processing </h2>
+            <div class="btn-container">
+             <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://#/'">Github</button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://#/'">Live Demo</button>
+            </div>
+          </div> 
+      
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project 1.jpeg"alt="Project 3 "class="project-img"/>
+            </div>
+            <h2 class="project-title">Project Four <br>Is Processing</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://#/'">Github</button>
+              <button class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://#/'">Live Demo</button>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="arrowicon arrow" onclick="location.href='#contact'"/>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/e-mail.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:vasanthrp1812@gmail.com" target="_blank">vasanthrp1812@gmail.com</a></p><br>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/phone-icon-2.jpg" alt="Contact icon" class="icon contact-icon phone-contact-icon"/>
+          <p class="contact-number"> <a type="number">+91 9150975082</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin 5.png" alt="LinkedIn icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com/in/vasanthrpbtech" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"/><!-- onclick="location.href='./#contact'"-->
+    </section>
+
+    <footer>
+      <nav id="footer-nav">
+        <div class="nav-links-container">
+          <ul class=" footer-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#profile">Profile</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-p2"><p><a href="#top"><h4>Click to Top</h4></a></p></div>
+      <p class="footer-p">All Rights Reserved. &#169; 2025 @ vasnth .</p>  <!-- add you want after 2025 or Vasanth or Author-->
+    </footer>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
+
+<!-- TO CREATE NAV SHORT CUT IS nav.nav-top>ul>li*3>a fst is create nav secnd is class name "nav-top" and
+  '>' this denotes next ul is unorder list 
+ '>' li*3 means creat 3 list under ul and '>' add 'a-anker tag to all list in ul'-->
+ <!-- css peek coodsnap autorenamtag extensions -->
+ 
+
