@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (min-width:1001px) and (max-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -10,13 +10,15 @@
   #projects {
     height: fit-content;
   }
-  /* added by me */
+  .footer-p {
+  font-size: 1.5rem;
+}
 
   .section__pic-container img:hover{
     transform: rotateY(360deg);
-      transition: 16s;
+    transition: 16s;
   }
-
+  
   .arrowicon:hover{
     transform: scaleY(2.4);
     transition: 0.9s;
@@ -24,107 +26,214 @@
   .section__pic-container {
   background-color:cornsilk;
   }
-
-
+  .arrowicon{
+  cursor: pointer;
+  height: 2rem;
+  position: absolute;
+  right: -7rem;
+  bottom: 2rem;
+}
 }
 
-/* THIS IS FOR TABLETS or TABS */
 
-@media screen and (max-width: 1200px) {  
+@media screen and (max-width: 1000px) {  
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
   }
-  #skills,
-  .skills-details-container {
-    margin-top: 2rem;
+  
+  section {
+    padding-top: 4vh;
+    height: 10vh;
+    margin: 0 5%;
+    flex-wrap: wrap;
+    height: fit-content;
   }
+  .footer-p {
+    font-size: 1rem;
+  }
+
+  #skills{
+    margin-top: 0px;
+  }
+
   #profile,
   .section-container {
     display: block;
   }
+
   .arrow {
     display: none;
   }
-  section,
+
   .section-container {
     height: fit-content;
   }
-  section {
-    margin: 0 5%;
+
+  .about-section-container {
+    height: fit-content;
+    margin: 1rem 0rem 2rem 0rem;
   }
+  
   .section__pic-container {
     width:  275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
   .about-containers {
-    margin-top: 0;
+    margin-top: 0rem;
   }
-  .contact-info-upper-container{
-    flex-wrap: wrap;
-  }
-  
-  /* added by me */
  
   .section__pic-container img{
     border-radius: 3rem;
     width: 275px;
     height: 275px;
   }
+
  .section__pic-container img:hover{
   border-radius: 100%;
   transform: rotate(-360deg);  
   transition: 10s;
   }
 
-    #footer-nav,
-  .footer-nav-links {
-    background-color: rgb(189, 193, 204);
-    border-radius: 3rem;
-    gap: 2.4rem;
-    font-size: 1.5rem;  
+  .about-text-container{
+    margin-top: 1rem;
   }
 
+  .skills-details-container,
+  .skills-about-containers {
+    margin-top: 0px;
+  }
 
+  .skills-about-containers{
+    padding-bottom: 0px;
+  }
 
+  .skills-details-container{
+    padding: 1%;
+  }
+  
+  .experience-details-container {
+    padding: 1rem;
+    background: rgb(240, 232, 232);
+    border-radius: 2rem;
+  }
+
+  .experience-text-container{
+  padding: 1% 1%;
+  border-radius: 1rem;
+  background: rgb(240, 232, 232);
+  }
+
+  .experience-text-container h4{
+  padding: 0% 0% 2%;
+  }
+
+  .experience-section-container {
+    height: 100%;
+  }
+
+  /* PROJECT SECTION */
+  .about-containers {
+    gap: 1rem;
+    margin-bottom: 0px;
+    margin-top:    0px;
+  }
+
+  .projects-color-container{
+    bottom: 1px;
+    position: relative;
+  }
+
+  .projects-details-container{
+    margin-top: 1%;
+    background-color: rgb(235, 66, 66);
+  }
+ 
+  /* GENERAl */
+  .arrowicon,#footer-nav{
+    display:none;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+
+  /* CONTECT SECTION */
+  #contact{
+    height: 1px;
+  }
+
+  .contact-info-upper-containe{
+    text-align: center;
+  }
+
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container{
+    padding: 1px 1px;
+    font-size: 12px;
+    height: fit-content;
+  }
+
+  /* FOOTER SECTION */
+  .footer-p2,.footer-p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 
 /* THIS IS FOR MOBILES */
-
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
+  #contact{
     height: 40vh;
   }
+  footer {
+    height: 10vh;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+  }
   #profile {
-    height: 83vh;
+    height: 80vh;
     margin-bottom: 0;
+    margin: 0;
   }
   article {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
-  #footer-nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+  .contact-info-upper-container{
+    margin: 0;
+    width: fit-content;
+    border: none;
+  }
   .contact-info-container {
     margin: 0;
+    font-size: 1rem;
+    padding: 3px 3px 1px 0px;
+
   }
-  .contact-info-container p,
-  .nav-links li a {
+  .contact-info-container p {
     font-size: 1rem;
   }
   .skills-sub-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1%;
   }
   .name {
     font-size: 1.5rem;
@@ -138,36 +247,29 @@
     width: auto;
     height: 46vw;
     justify-content: center;
-  }
+    background-color: rgb(235, 66, 66);
+   }
   .section__pic-container img{
     border-radius: 50%;
+    height: 225px;
+    width:  200px;
   }
-
-  /* ADD BY ME 3 below */
   
-  .section__pic-container{
-    background-color: rgb(235, 66, 66);
-  }
-
-  .section__pic-container img{
-    height: 260px;
-    width:  240px;
-  }
-
   .section__pic-container img:hover{
     border-radius: 50%;
     transform: rotate(360deg);
     transition: 6s;
-    /* transition: all ease-in-out;
-    transform: scale(1.05); */
     transition: 3s;
   }
   
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+  }
+  .section__text__p1 {
+    font-size: 1rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .text-container {
     text-align: justify;
@@ -175,26 +277,11 @@
   #fotter p{
     padding-bottom: 2%;
   }
-  .footer-nav-links{
-    flex-wrap: wrap;
-    background-color: rgb(235, 66, 66);
-    gap: 1px;
-  }
-  /* aadded by me */
   .nav-links-container{
     background-color: rgb(235, 66, 66);
     border:  rgb(235, 66, 66);
   }
-
-  .footer-nav-links a{
-    color: rgb(255, 255, 255);
-    flex-wrap: wrap;
-  }
-  footer nav {
-    background-color:  rgb(235, 66, 66);
-  }
-  
-   #hamburger-nav {
+  #hamburger-nav {
     background-color: rgb(235, 66, 66);
   }
   .menu-links{
@@ -213,21 +300,113 @@
     color:  rgb(235, 26, 26);
     text-decoration: none;
   }
-  .contact-info-container{
-    padding: 3px 3px 1px 0px;
-  }
-
-  /* #footer-nav, */
-.footer-nav-links {
-    background-color: rgb(164, 222, 17);
-    font-size: 1rem;  
-    background-color: transparent;
-    flex-direction: row;
-    border-radius: 5%;
-    gap: 2px;
-    font-size: 1rem;
-    align-items: center;
+  
+ /* ADD BY ME  */
+.section__text{
+  margin-top: 5rem;
 }
- 
+.section__text button{
+  padding: 4px 10px;
+  font-size: 10px;
+  width: 100px;
+  height: 40px;
+}
+.footer-p2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-p2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-p2 h4{
+  font-size: 01rem;
+  margin: 0;
+  padding: 0;
+}
+.footer-p{
+  margin: 0px;
+  font-size: 1rem;
+}
+.skills-details-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-container{
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+  width:110%;
+  height: 70%; 
+}
+.article-container img{
+margin: 0;
+align-items: center;
+}
+  .contact-icon{
+  cursor: default;
+  height: 1rem;
+  background-color: white;
+}
+.projects-color-container{
+  width:50%;
+  height: 50vh;
+}
+.project-title{
+  font-size: 1rem;
+  margin: 0rem;
+  margin-bottom: 7px;
+}
+.project-btn{
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 1px;
+  height: 50px;
+  width: 75px;
+  justify-content: center;
+}
+/* .contactarrowicon{
+  display: none;
+} */
+.experience-text-container h4{
+  font-size: 1rem;
+  margin: 0;
+}
 
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  /* ...existing code... */
+  /* Stack skills columns into one column on mobile */
+  .skills-about-containers {
+    flex-direction: column ;
+    align-items: center;
+  }
+  .skills-container {
+    width: 80%;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .experience-text-container p {
+    font-size: 0.6rem;
+    font-weight : 500px;
+    word-spacing: 0%;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+.about-text-container{
+  font-size: 0.6rem;
+    font-weight : 500px;
+    word-spacing: 0%;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 9px 10px;
+}
+.about-containers{
+  font-size: smaller;
+}
 }

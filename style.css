@@ -36,7 +36,7 @@ a,
   justify-content: space-around;
   align-items: center;
   height: 10vh;
- background-color:cornsilk ; /* background-color:lightcoral ; */
+ background-color:cornsilk ;
   border-radius: 10px;
   margin: 1% 1%;
 }
@@ -49,7 +49,8 @@ a,
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  background-color: rgba(99, 198, 225, 0.741);
+  /* background-color: rgba(99, 198, 225, 0.741); */
+  background-color: rgba(255, 255, 255, 0.315);
   border-radius: 10px;
   margin: 1% 1%;
 }
@@ -79,7 +80,6 @@ a:hover {
 
 .name:hover {
   cursor: default;
-  background-image: linear-gradient(red,  green,blue,rgb(237, 6, 203));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -185,6 +185,9 @@ section {
 
 .section-container {
   display: flex;
+  gap: 4rem;
+  height: 80%;
+
 }
 
 /* PROFILE SECTION */
@@ -230,7 +233,6 @@ section {
 
 .section__text__p1 {
   text-align: center;
-  /* color: white; */
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
@@ -268,20 +270,6 @@ section {
   right: -5rem;
 }
 
-.profile-icon{
-  /* cursor: pointer;
-  height: 2rem;
-  right: -5rem; */
-  border-radius: 100%;
-}
-
-/* .gmail{ */
-  /* height: 2.3rem; */
-  /* margin-top: 2rem; */
-
-  /* right: -5rem; */
-/* } */
-
 .arrowicon{
   cursor: pointer;
   height: 2rem;
@@ -290,8 +278,8 @@ section {
   bottom: 2rem;
 }
 
-.arrow {
-  height: 2rem;
+.profile-icon{
+    border-radius: 100%;
 }
 
 /* BUTTONS */
@@ -375,33 +363,40 @@ h4{
   border-radius: 2rem;
 }
 
-.about-text-container{
+.about-text-container p,.experience-text-container p{
+color: black;
+font-weight: 600;
+}
+.about-text-container,.experience-text-container{
   padding: 3% 1%;
   border-radius: 1rem;
   background: rgb(240, 232, 232);
+  word-spacing: 1px;
+  line-height: 1.5rem;
 }
 
 /* THE BELOW DETAILE CONTAINER is for in about ,skills,projects */
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  /* background: white; */
-
   background: rgb(240, 232, 232);
-
   border-radius: 2rem;
-  /* border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163); */
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
 /*  SKILLS SECTION */
-
+.skills-container{
+  padding: 1.5rem;
+  flex: 1;
+  background: rgb(240, 232, 232);
+  border-radius: 2rem;
+  text-align: center
+}
+.skills-about-containers{
+  gap: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
 #skills {
   position: relative;
 }
@@ -417,6 +412,9 @@ h4{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 0px 2rem 0px;
+  border-radius: 1rem;
+  margin-top: 2rem;
 }
 
 .article-container {
@@ -431,7 +429,7 @@ h4{
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 0.5rem;
 }
 
@@ -444,6 +442,7 @@ article .icon {
 
 #experience {
   position: relative;
+  height: fit-content;
 }
 
 .experience-section-container {
@@ -453,9 +452,8 @@ article .icon {
 
 .experience-containers {
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  /* display: flex; */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .experience-details-container {
@@ -463,18 +461,14 @@ article .icon {
   flex: 1;
   background: rgb(240, 232, 232);
   border-radius: 2rem;
-  /* border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163); */
   text-align: center;
-
   justify-content: center;
   flex-direction: column;
   display: flex;
 }
-
-
-/* .experience-details-container {
-} */
+.experience-text-container h4{
+  margin-bottom: 1rem;
+}
 
 
 /* PROJECTS SECTION */
@@ -484,7 +478,7 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
+  /* border-color: rgb(163, 163, 163); */
   background: rgb(250, 250, 250);
 }
 
@@ -504,7 +498,7 @@ article .icon {
 }
 
 .projects-details-container{
-  margin-top: 2%;
+  margin-top: 2px;
 }
 
 /* CONTACT */
@@ -514,7 +508,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 
 .contact-info-upper-container {
@@ -587,6 +581,7 @@ footer p {
 
 .footer-p {
   color: rgb(255, 253, 253);
+  font-weight: 3rem;
 }
 
 .footer-p2  {
