@@ -11,7 +11,7 @@
     height: fit-content;
   }
   .footer-p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
   .section__pic-container img:hover{
@@ -191,7 +191,6 @@
 }
 
 
-/* THIS IS FOR MOBILES */
 @media screen and (max-width: 600px) {
   #contact{
     height: 40vh;
@@ -203,7 +202,7 @@
     padding: 0;
   }
   #profile {
-    height: 80vh;
+    height: 84vh;
     margin-bottom: 0;
     margin: 0;
   }
@@ -251,8 +250,8 @@
    }
   .section__pic-container img{
     border-radius: 50%;
-    height: 225px;
-    width:  200px;
+    height: 270px;
+    width:  270px;
   }
   
   .section__pic-container img:hover{
@@ -301,9 +300,9 @@
     text-decoration: none;
   }
   
- /* ADD BY ME  */
 .section__text{
-  margin-top: 5rem;
+  margin-top: 6rem;
+  padding: 3rem;
 }
 .section__text button{
   padding: 4px 10px;
@@ -336,6 +335,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 0;
 }
 .article-container{
   padding: 0;
@@ -347,6 +347,7 @@
 .article-container img{
 margin: 0;
 align-items: center;
+margin-bottom: 0;
 }
   .contact-icon{
   cursor: default;
@@ -379,16 +380,15 @@ align-items: center;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 600px) {
-  /* ...existing code... */
-  /* Stack skills columns into one column on mobile */
+
   .skills-about-containers {
     flex-direction: column ;
-    align-items: center;
+    align-items: center;margin-bottom: 0;
   }
   .skills-container {
     width: 80%;
     align-items: center;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
   }
   .experience-text-container p {
     font-size: 0.6rem;
@@ -408,5 +408,8 @@ align-items: center;
 }
 .about-containers{
   font-size: smaller;
+}
+#about,#skills,#projects,#contact {
+  margin: 0;
 }
 }
