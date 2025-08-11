@@ -336,7 +336,7 @@
     border-radius: 10px;
     top: 27.1px;
     right: -44px;
-    background-color: transparent;
+    /* background-color: transparent; */
   }
   .menu-links li a:hover{
     color: rgb(0, 0, 0)
