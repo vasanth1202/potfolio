@@ -1,4 +1,3 @@
-/* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -49,7 +48,6 @@ a,
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  /* background-color: rgba(99, 198, 225, 0.741); */
   background-color: rgba(255, 255, 255, 0.315);
   border-radius: 10px;
   margin: 1% 1%;
@@ -77,14 +75,6 @@ a:hover {
 .name {
   font-size: 2rem;
 }
-/* .name::after{
-  content: "aNth~";
-  color: rgb(235, 66, 66);
-}
-.name::before{
-  content: "~";
-  color:rgb(235, 66, 66);
-} */
 
 .name:hover {
   cursor: default;
@@ -92,7 +82,6 @@ a:hover {
   background-image: linear-gradient(red,white,blue,green,yellow,gray);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* display: inline-block; */
 }
 
 /* HAMBURGER MENU */
@@ -438,11 +427,10 @@ font-weight: 600;
 article {
   display: flex;
   width: 10rem;
-  /* justify-content: space-around; */
   gap: 0.5rem;
 }
 
-/* THIS IS FOR SKILLS section CHECKMARK ICON */
+/* THIS IS FOR SKILLS CHECKMARK ICON */
 article .icon {
   cursor: default;
 }
@@ -479,7 +467,6 @@ article .icon {
   margin-bottom: 1rem;
 }
 
-
 /* PROJECTS SECTION */
 
 #projects {
@@ -507,9 +494,7 @@ article .icon {
 }
 
 .projects-details-container{
-  /* display: grid; */
   grid-template-columns: repeat(2, 1fr);
-  /* gap: 10px; */
   margin-top: 2px;
 }
 
@@ -520,7 +505,6 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  /* margin-top: 10%; */
 }
 
 .contact-info-upper-container {
