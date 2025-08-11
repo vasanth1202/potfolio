@@ -483,8 +483,9 @@
 
   .about-containers{
     font-size: smaller;
-    width: 96%;
+    width: 90%;
     border-radius: 10px;
+    margin: 9px;
   }
 
   #about,#skills,#projects,#contact {
