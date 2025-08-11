@@ -416,8 +416,13 @@ margin-bottom: 0;
   margin-bottom: 7px;
 }
 .project-btn{
-  font-weight: 700;
-  height: 50px;
+  height: 26px;
+  width: 60px;
+  font-size: 10px;
+  width: 60px;
+  height: 26px;
+  text-align: center;
+  padding: 1px;
 }
 .contactarrowicon{
   display: none;
