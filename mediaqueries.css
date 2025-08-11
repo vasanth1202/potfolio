@@ -397,7 +397,7 @@
   .article-container{
     padding: 0;
     margin: 0;
-    gap: 1rem;
+    gap: 0.8rem;
     width:110%;
     height: 70%; 
   }
@@ -416,7 +416,8 @@
     height: fit-content;
   }
   .project-img{
-    height: -webkit-fill-available;
+    height: 179px;
+    width: 220px;
   }
   .project-title{
     font-size: 1rem;
@@ -451,8 +452,14 @@
   .skills-container {
     width: 80%;
     align-items: center;
+    padding: 8px;
   }
-
+  .experience-container{
+    width: 40%;
+  }
+  .details-container{
+    font-size: 73%;
+  }
   .experience-text-container p {
     font-size: 0.6rem;
     font-weight : 500px;
@@ -468,6 +475,10 @@
     line-height: 1.5;
     text-align: justify;
     padding: 9px 10px;
+    width: 90%;
+  }
+  .experience-containers{
+    width: 98%;
   }
 
   .about-containers{
