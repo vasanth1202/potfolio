@@ -357,12 +357,10 @@
   } */
   .menu-links {
     border-radius: 10px;
-    top: 27.1px;
-    right: -44px;
     background-color: aliceblue;
     top: 36.1px;
     right: -23px;
-    height: 31vh;
+    /* height: 31vh; */
   }
   .menu-links a:hover {
     color: rgb(241, 235, 235);
@@ -559,8 +557,8 @@
   object-fit: cover;    
   display: block;       
   margin: 0 auto;  
-  width: 361px;
-  height: 264px;     
+  width: 650px;
+  height: 300px;     
 }
 
 
