@@ -361,6 +361,9 @@ h4{
 .about-pic {
   border-radius: 2rem;
 }
+.experience-text-container{
+  text-align: justify;
+}
 
 .about-text-container p,.experience-text-container p{
 color: black;
