@@ -357,7 +357,7 @@
     border-radius: 10px;
     background-color: aliceblue;
     top: 36.1px;
-    right: -23px;
+    right: 0px;
     /* height: 31vh; */
   }
   .menu-links a:hover {
@@ -373,6 +373,9 @@
     font-size: 1.5rem;
     text-decoration: none;
     color: black;
+  }
+   .hamburger-menu{
+    right: -2rem;
   }
 
   .menu-links a:hover {
