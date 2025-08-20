@@ -90,9 +90,17 @@
   .menu-links{
     border-radius: 30px;
     border: none;
+    right: 0.3rem;
   }
   #hamburger-nav {
     display: flex;
+  }
+  .hamburger-menu{
+    right: -6rem;
+  }
+  .name{
+    left: 0;
+    margin-left: 0;
   }
   
   section {
@@ -155,7 +163,7 @@
     border-radius: 100%;
     border: rgb(255, 255, 255) 0.1rem solid;
     height: 40px;
-}
+  }
 
   .about-text-container{
     margin-top: 1rem;
