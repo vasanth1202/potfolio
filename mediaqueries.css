@@ -577,7 +577,8 @@
   display: block;       
   margin: 0 auto;  
   width: 51vw;
-  height: 26vh;
+  height: 30vh;
+  /* height: 26vh; */
   }
 
   .section__pic-container {
@@ -592,7 +593,8 @@
   .section__pic-container {
     width: auto;
      max-width: 270px;
-    height: 43vw;
+    height: 50vw;
+    /* height: 43vw; */
     justify-content: center;
      margin: auto;
   }
