@@ -271,7 +271,8 @@
   }
   #profile {
     height: 84vh;
-    margin: 25px 0 0 0;
+    /* margin: 25px 0 0 0; */
+    margin: 0;
     padding: 0%;
   }
   article {
@@ -335,9 +336,11 @@
     background-color: rgb(235, 66, 66);
     border: rgb(235, 66, 66);
   }
-  /* #hamburger-nav {
+  #hamburger-nav {
     background-color: rgb(241, 235, 235);
-  } */
+    margin: 10px;
+    height: 3rem;
+  }
   .menu-links {
     border-radius: 10px;
     background-color: aliceblue;
